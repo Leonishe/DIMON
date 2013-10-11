@@ -30,10 +30,10 @@ public class Main {
             Unmarshaller um = jaxbContext.createUnmarshaller();
             Soft soft = (Soft) um.unmarshal(file);
 
-            Integer sys=0;
-            Integer ed=0;
             for(Company company:soft.getCompany()){
-
+                System.out.println("Company = "+company.getName());
+                Integer sys=0;
+                Integer ed=0;
                 for (Product product:company.getSystem()){
                     sys+=product.getPrice();
                 }
@@ -41,11 +41,11 @@ public class Main {
                 for (Product product:company.getEditor()){
                     ed+=product.getPrice();
                 }
+                System.out.println("Summ system = "+sys);
+                System.out.println("Summ editor = "+ed);
+                System.out.println("All summ = "+(ed+sys));
             }
 
-            System.out.println("Summ system = "+sys);
-            System.out.println("Summ editor = "+ed);
-            System.out.println("All summ = "+(ed+sys));
             System.out.println(soft);
         } catch (Exception e) {
             e.printStackTrace();
