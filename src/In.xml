@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Soft>
+	<Company name="EPAM SYSTEMS">
+		<system>
+			<product price="75" size="200">HDD Scan</product>
+			<product price="80" size="150">Motherboard Tools</product>
+			<product price="5" size="10">Keyboard Tools</product>
+		</system>
+		<editor>
+			<product price="100" size="1080">Microsoft Office 2010</product>
+			<product price="150" size="550">Adobe Photoshop SC9</product>
+		</editor>
+	</Company>
+</Soft>
